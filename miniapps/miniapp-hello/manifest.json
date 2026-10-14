@@ -1,0 +1,8 @@
+{
+  "id": "miniapp-hello",
+  "name": "Hello Packages",
+  "version": "1.0.0",
+  "enabled": true,
+  "minHostVersion": "1.0.0",
+  "capabilities": []
+}

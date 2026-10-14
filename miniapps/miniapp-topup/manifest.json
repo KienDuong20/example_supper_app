@@ -1,0 +1,8 @@
+{
+  "id": "miniapp-topup",
+  "name": "Top-up",
+  "version": "1.0.0",
+  "enabled": true,
+  "minHostVersion": "1.0.0",
+  "capabilities": ["payment.create", "otp.request", "confirm"]
+}

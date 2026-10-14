@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{{TITLE}}</title>
+  <style>
+    :root { --brand: #0061af; --danger: #ed1c24; --ok: #16a34a; --ink: #0f172a; --muted: #64748b; --line: #e2e8f0; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, system-ui, sans-serif; color: var(--ink); background: #f5f7fb; }
+    main { padding: 16px; display: grid; gap: 12px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
+    .meta { color: var(--muted); font-size: 12px; }
+    h2 { margin: 0 0 4px; font-size: 18px; }
+    button { width: 100%; padding: 12px; border: 0; border-radius: 10px; background: var(--brand); color: #fff; font-size: 15px; font-weight: 600; }
+    button.ghost { background: #fff; color: var(--danger); border: 1px solid var(--danger); }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    li:last-child { border-bottom: 0; }
+    .log { font: 12px/1.5 ui-monospace, Menlo, monospace; white-space: pre-wrap; }
+    .ok { color: var(--ok); } .err { color: var(--danger); }
+  </style>
+</head>
+<body>
+  <main id="app">Loading…</main>
+  <script>window.__MINIAPP__ = {{META_JSON}};</script>
+  <script>{{SDK}}</script>
+  <script>{{APP}}</script>
+</body>
+</html>
